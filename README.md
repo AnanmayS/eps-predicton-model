@@ -1,4 +1,4 @@
-# Earnings Beat/Miss Predictor
+# Earnings Surprise Prediction Platform
 
 A full-stack machine learning project that predicts whether a public company is likely to beat or miss earnings expectations using leakage-safe pre-earnings features. The project combines a reproducible Python data pipeline, an XGBoost classifier, rolling out-of-sample backtests, a FastAPI inference API, and a React dashboard for explaining predictions in plain English.
 
