@@ -21,7 +21,8 @@ jobs:
         env:
           ENABLE_LIVE_MARKET_DATA: "false"
           USE_YFINANCE: "false"
-        run: pytest
+          PYTHONPATH: .
+        run: python -m pytest tests
 
   frontend:
     runs-on: ubuntu-latest
