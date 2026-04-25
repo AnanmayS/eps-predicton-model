@@ -1,0 +1,15 @@
+{
+  "routeKey": "POST /predict",
+  "rawPath": "/predict",
+  "headers": {
+    "content-type": "application/json"
+  },
+  "requestContext": {
+    "http": {
+      "method": "POST",
+      "path": "/predict"
+    }
+  },
+  "body": "{\"ticker\":\"MSFT\"}",
+  "isBase64Encoded": false
+}

@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+node_modules/
+dist/
+build/
+coverage/
+*.log
+backend/data/raw/*.csv
+backend/data/processed/*.csv
+backend/models/*.pkl
+backend/reports/*.json
+backend/reports/*.csv

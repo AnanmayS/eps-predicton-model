@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: earnings-predictor-backend
+    environment:
+      FRONTEND_ORIGIN: http://localhost:3000
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: http://localhost:8000
+    container_name: earnings-predictor-frontend
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
